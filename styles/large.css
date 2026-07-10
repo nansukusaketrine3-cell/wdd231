@@ -1,0 +1,63 @@
+@media only screen and (min-width: 768px){
+
+#menu{
+    display:none;
+}
+
+header{
+    padding:0 2rem;
+}
+
+.header-inner{
+    max-width:1200px;
+    margin:auto;
+}
+
+nav{
+    display:block !important;
+}
+
+nav ul{
+    display:flex;
+    gap:1rem;
+}
+
+nav li{
+    border:none;
+}
+
+nav a{
+    padding:1rem 1.5rem;
+    border-radius:5px;
+}
+
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:2rem;
+}
+
+.grid{
+    grid-template-columns:2fr 1fr;
+}
+
+section{
+    min-height:250px;
+}
+
+footer{
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+    gap:2rem;
+}
+
+.social{
+    justify-content:flex-start;
+}
+
+footer p:last-child{
+    text-align:right;
+}
+
+}
