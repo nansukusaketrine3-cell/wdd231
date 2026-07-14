@@ -1,0 +1,44 @@
+{
+  "family_name": "Gifted",
+  "move_in_date": "2026-01-24",
+  "number_of_people": 7,
+  "visited_by_bishopric": true,
+  "family_members": [
+    {
+      "name": "Nansukusa Ketrine",
+      "gender": "Female",
+      "birthdate": "2001-01-27"
+    },
+    {
+      "name": "Lutwama Gift",
+      "gender": "Male",
+      "birthdate": "1995-08-20"
+    },
+    {
+      "name": "kakande Gaster",
+      "gender": "Male",
+      "birthdate": "1992-03-05"
+    },
+    {
+      "name": "Gideon Jingo",
+      "gender": "Male",
+      "birthdate": "1993-11-10"
+    }
+    {
+      "name": "Nassolo Pretty",
+      "gender": "Female",
+      "birthdate": "2006-03-05"
+    },
+    {
+      "name": "Sseninde Enock",
+      "gender": "Male",
+      "birthdate": "2003-11-10"
+    }
+    {
+      "name": "Nalwanga Margret",
+      "gender": "Female",
+      "birthdate": "1975-11-10"
+    }
+    
+  ]
+}
