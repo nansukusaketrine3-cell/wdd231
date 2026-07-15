@@ -120,40 +120,6 @@ h2 {
     color: black;
 }
 
-/* Member Grid */
-
-#members.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
-.member-card {
-    background: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,.15);
-    text-align: center;
-}
-
-.member-card img {
-    width: 120px;
-    height: auto;
-    margin-bottom: 1rem;
-}
-
-/* List View */
-
-#members.list {
-    display: flex;
-    flex-direction: column;
-}
-
-#members.list .member-card {
-    display: flex;
-    gap: 1rem;
-    text-align: left;
-}
 
 /* Footer */
 
