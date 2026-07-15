@@ -1,48 +1,96 @@
-/* ==========================
-   Google Fonts
-   Add these in HTML, not here!
-   ========================== */
+/* ==========================================
+   NANSUKUSA KETRINE | WDD231 Chamber Project
+   small.css
+   ========================================== */
 
-/* ==========================
-   Color Scheme
-   ========================== */
+/* ==========================================
+   CSS VARIABLES
+   ========================================== */
 
 :root {
     --primary: #236465;
     --secondary: #e9c46a;
-    --accent: #f4f4f4;
-    --dark: #333;
-    --white: #fff;
+
+    --background: #f4f4f4;
+    --surface: #ffffff;
+
+    --text: #333333;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+
+    --border-light: rgba(255, 255, 255, 0.30);
+    --shadow: rgba(0, 0, 0, 0.15);
+
+    --radius: 10px;
+    --transition: 0.3s ease;
+    --max-width: 1200px;
 }
 
-/* ==========================
-   Reset
-   ========================== */
+/* ==========================================
+   RESET
+   ========================================== */
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ==========================
-   Body
-   ========================== */
+/* ==========================================
+   GLOBAL STYLES
+   ========================================== */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--accent);
-    color: var(--dark);
+    font-family: "Open Sans", Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
     line-height: 1.6;
 }
 
-/* ==========================
-   Header
-   ========================== */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+/* ==========================================
+   TYPOGRAPHY
+   ========================================== */
+
+h1,
+h2,
+h3 {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: .8rem;
+}
+
+/* ==========================================
+   HEADER
+   ========================================== */
 
 header {
     background: var(--primary);
-    color: var(--white);
+    color: var(--text-light);
 }
 
 .header-container {
@@ -60,106 +108,112 @@ header {
 
 .logo img {
     width: 60px;
-    height: auto;
 }
+
+.site-name {
+    color: var(--text-light);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.tagline {
+    color: var(--text-light);
+    font-size: .9rem;
+}
+
+/* ==========================================
+   HAMBURGER BUTTON
+   ========================================== */
 
 #menu {
     background: none;
     border: none;
-    color: var(--white);
+    color: var(--text-light);
     font-size: 2rem;
-    cursor: pointer;
 }
 
-/* ==========================
-   Navigation
-   ========================== */
+/* ==========================================
+   NAVIGATION
+   ========================================== */
 
 nav {
     display: none;
+    background: var(--primary);
 }
 
 nav.open {
     display: block;
 }
 
-nav ul {
-    list-style: none;
-}
-
 nav li {
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid var(--border-light);
 }
 
 nav a {
     display: block;
-    padding: .9rem;
-    color: var(--white);
-    text-decoration: none;
-    transition: .3s;
+    padding: 1rem;
+    color: var(--text-light);
+    transition: var(--transition);
 }
 
 nav a:hover,
 nav a.active {
     background: var(--secondary);
-    color: #000;
+    color: var(--text-dark);
 }
 
-/* ==========================
-   Main
-   ========================== */
+/* ==========================================
+   MAIN
+   ========================================== */
 
 main {
-    max-width: 1200px;
+    max-width: var(--max-width);
     margin: 0 auto;
     padding: 1rem;
 }
 
-h1,
-h2 {
-    margin: 1rem 0;
-    color: var(--primary);
+main h1 {
+    text-align: center;
 }
 
-/* ==========================
-   View Buttons
-   ========================== */
+/* ==========================================
+   VIEW BUTTONS
+   ========================================== */
 
 .view-buttons {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 .view-buttons button {
     padding: .8rem 1.5rem;
     background: var(--primary);
-    color: var(--white);
+    color: var(--text-light);
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: .3s;
+    transition: var(--transition);
 }
 
 .view-buttons button:hover {
     background: var(--secondary);
-    color: #000;
+    color: var(--text-dark);
 }
 
-/* ==========================
-   Member Grid
-   ========================== */
+/* ==========================================
+   MEMBER GRID
+   ========================================== */
 
 #members.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
-/* ==========================
-   Member List
-   ========================== */
+/* ==========================================
+   MEMBER LIST
+   ========================================== */
 
 #members.list {
     display: flex;
@@ -167,43 +221,61 @@ h2 {
     gap: 1rem;
 }
 
-/* ==========================
-   Member Card
-   ========================== */
+/* ==========================================
+   MEMBER CARD
+   ========================================== */
 
 .member-card {
-    background: var(--white);
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    background: var(--surface);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: 0 0 10px var(--shadow);
     text-align: center;
 }
 
 .member-card img {
-    display: block;
-    width: 100%;
-    max-width: 180px;
-    height: auto;
+    width: 180px;
     margin: 0 auto 1rem;
 }
+
+.member-card h2 {
+    margin-bottom: .5rem;
+}
+
+.member-card p {
+    margin-bottom: .5rem;
+}
+
+.member-card a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.member-card a:hover {
+    color: var(--secondary);
+}
+
+/* ==========================================
+   LIST VIEW
+   ========================================== */
 
 #members.list .member-card {
     display: grid;
     grid-template-columns: 180px 1fr;
-    gap: 1rem;
     align-items: center;
+    gap: 1.5rem;
     text-align: left;
 }
 
-/* ==========================
-   Footer
-   ========================== */
+/* ==========================================
+   FOOTER
+   ========================================== */
 
 footer {
     margin-top: 2rem;
     padding: 2rem 1rem;
     background: var(--primary);
-    color: var(--white);
+    color: var(--text-light);
     text-align: center;
 }
 
