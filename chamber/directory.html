@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nansukusa Ketrine | Chamber of Commerce Directory</title>
+
+    <meta name="description" content="The Chamber of Commerce directory displays local businesses and members in our community.">
+    <meta name="author" content="Nansukusa Ketrine">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore businesses and members of our local Chamber of Commerce.">
+    <meta property="og:image" content="https://nansukusaketrine3-cell.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://nansukusaketrine3-cell.github.io/wdd231/chamber/directory.html">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+
+        <img src="images/logo.svg" alt="Chamber Logo" width="100">
+
+        <div>
+            <h1>Nansukusa Chamber of Commerce</h1>
+            <p>Connecting Businesses and Community</p>
+        </div>
+
+        <button id="menu" aria-label="Open Menu">
+            ☰
+        </button>
+
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <h1>Business Directory</h1>
+
+    <div class="view-buttons">
+        <button id="grid">Grid View</button>
+        <button id="list">List View</button>
+    </div>
+
+    <section id="members" class="grid"></section>
+
+</main>
+
+<footer>
+
+    <p>
+    &copy;
+    <span id="currentyear"></span>
+        Nansukusa Ketrine | WDD231
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>

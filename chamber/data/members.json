@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Superplex Holdings",
+    "address": "Nasana, Kampala, Uganda",
+    "phone": "+256 700 123456",
+    "website": "https://www.superplexholdings.com",
+    "image": "superplex.jpg",
+    "membership": 3,
+    "industry": "Automotive & Real Estate",
+    "email": "info@superplexholdings.com"
+  },
+  {
+    "name": "Kampala Motors",
+    "address": "Ntinda, Kampala",
+    "phone": "+256 701 234567",
+    "website": "https://www.kampalamotors.com",
+    "image": "kampala-motors.jpg",
+    "membership": 2,
+    "industry": "Motor Vehicle Sales",
+    "email": "sales@kampalamotors.com"
+  },
+  {
+    "name": "Pearl Bank Uganda",
+    "address": "Kampala Road",
+    "phone": "+256 702 345678",
+    "website": "https://www.pearlbank.ug",
+    "image": "pearl-bank.jpg",
+    "membership": 3,
+    "industry": "Banking",
+    "email": "support@pearlbank.ug"
+  },
+  {
+    "name": "Skyline Hotel",
+    "address": "Entebbe Road",
+    "phone": "+256 703 456789",
+    "website": "https://www.skylinehotel.ug",
+    "image": "skyline-hotel.jpg",
+    "membership": 2,
+    "industry": "Hospitality",
+    "email": "bookings@skylinehotel.ug"
+  },
+  {
+    "name": "Fresh Farms",
+    "address": "Nansana",
+    "phone": "+256 704 567890",
+    "website": "https://www.freshfarms.ug",
+    "image": "fresh-farms.jpg",
+    "membership": 1,
+    "industry": "Agriculture",
+    "email": "info@freshfarms.ug"
+  },
+  {
+    "name": "Victoria Tech Solutions",
+    "address": "Bugolobi",
+    "phone": "+256 705 678901",
+    "website": "https://www.victoriatech.ug",
+    "image": "victoria-tech.jpg",
+    "membership": 2,
+    "industry": "Technology",
+    "email": "contact@victoriatech.ug"
+  },
+  {
+    "name": "City Builders Ltd",
+    "address": "Mengo, Kampala",
+    "phone": "+256 706 789012",
+    "website": "https://www.citybuilders.ug",
+    "image": "city-builders.jpg",
+    "membership": 3,
+    "industry": "Construction",
+    "email": "office@citybuilders.ug"
+  }
+]

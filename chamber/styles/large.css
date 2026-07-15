@@ -1,0 +1,42 @@
+@media only screen and (min-width: 768px) {
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    width: auto;
+}
+
+#menu {
+    display: none;
+}
+
+nav {
+    display: block !important;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    border: none;
+}
+
+nav a {
+    padding: 1rem;
+}
+
+#members.grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+}
