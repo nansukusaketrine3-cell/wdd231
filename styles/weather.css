@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+main {
+    margin-top: 2rem;
+}
+
+figure {
+    margin: 1rem auto;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
