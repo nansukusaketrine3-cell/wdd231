@@ -1,39 +1,169 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* ==========================================
+   LARGE SCREEN CSS
+========================================== */
+
+
+@media screen and (min-width:768px){
+
+
+
+/* HEADER */
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
 }
 
-.header-container {
-    width: auto;
+
+.header-container{
+
+    width:auto;
+
 }
 
-#menu {
-    display: none;
+
+#menu{
+
+    display:none;
+
 }
 
-nav {
-    display: block !important;
+
+
+/* NAV */
+
+nav{
+
+    display:block;
+
 }
 
-nav ul {
-    display: flex;
+
+nav ul{
+
+    display:flex;
+
 }
 
-nav li {
-    border: none;
+
+nav li{
+
+    border:none;
+
 }
 
-nav a {
-    padding: 1rem;
+
+nav a{
+
+    padding:1rem 1.5rem;
+
 }
 
-#members.grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+
+
+
+/* =========================
+MAIN LAYOUT CHANGE
+========================= */
+
+
+main{
+
+    padding:2rem;
+
 }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
+
+
+/* DIRECTORY GRID */
+
+#members.grid{
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+
+/* DIRECTORY LIST */
+
+#members.list .member-card{
+
+    display:grid;
+
+    grid-template-columns:200px 1fr;
+
+    align-items:center;
+
+    text-align:left;
+
+}
+
+
+
+/* CARD HOVER */
+
+.member-card:hover{
+
+    transform:translateY(-5px);
+
+    transition:.3s;
+
+}
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    text-align:left;
+
+}
+
+
+}
+
+#forecast{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+
+#spotlights{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+
+.hero img{
+
+height:500px;
+
+}
+
+
+.events,
+.weather,
+#spotlights{
+
+margin:2rem 0;
+
 }
