@@ -1,42 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Join | Nansukusa Chamber of Commerce</title>
+    <title>Join Nansukusa Chamber of Commerce</title>
 
-    <meta name="description" content="Join the Nansukusa Chamber of Commerce and grow your business network.">
+    <meta name="description" content="Apply to join Nansukusa Chamber of Commerce and connect with local businesses, networking opportunities, and community growth.">
+
     <meta name="author" content="Nansukusa Ketrine">
+
+
+    <!-- Open Graph Meta Tags -->
+
+    <meta property="og:title" content="Join Nansukusa Chamber of Commerce">
+
+    <meta property="og:description" content="Become a member of Nansukusa Chamber of Commerce and grow your business through networking, events, and community support.">
+
+    <meta property="og:image" content="https://nansukusaketrine3-cell.github.io/wdd231/chamber/images/logo.svg">
+
+    <meta property="og:url" content="https://nansukusaketrine3-cell.github.io/wdd231/chamber/join.html">
+
+
+    <!-- Favicon -->
 
     <link rel="icon" href="images/favicon.ico">
 
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- CSS -->
+
     <link rel="stylesheet" href="styles/normalize.css">
+
     <link rel="stylesheet" href="styles/small.css">
+
     <link rel="stylesheet" href="styles/larger.css">
 
+
+    <!-- JavaScript -->
+
     <script src="scripts/getdates.js" defer></script>
+
     <script src="scripts/join.js" defer></script>
+
 
 </head>
 
+
 <body>
+
 
     <header>
 
+
         <div class="header-container">
 
-            <img src="images/logo.svg" alt="Chamber Logo" width="100">
+
+            <img src="images/logo.svg" 
+                alt="Nansukusa Chamber of Commerce Logo"
+                width="100"
+                height="100">
+
 
             <div>
+
                 <h2>Nansukusa Chamber of Commerce</h2>
+
                 <p>Connecting Businesses and Community</p>
+
             </div>
 
-            <button id="menu">☰</button>
+
+            <button id="menu" aria-label="Open navigation menu">
+                ☰
+            </button>
+
 
         </div>
-
 
         <nav>
             <ul>
@@ -45,25 +95,31 @@
                 <li><a href="join.html" class="active">Join</a></li>
                 <li><a href="thankyou.html">Thankyou</a></li>
             </ul>
-        </nav>
+        </nav>    
+
 
     </header>
 
 
+
     <main>
 
+
         <h1>Join the Chamber</h1>
+
 
 
         <div class="join-layout">
 
 
+
             <form method="get" action="thankyou.html">
 
 
-                <label>
+                <label for="fname">
                 First Name:
                 <input 
+                id="fname"
                 type="text"
                 name="fname"
                 title="Applicant first name"
@@ -72,9 +128,11 @@
                 </label>
 
 
-                <label>
+
+                <label for="lname">
                 Last Name:
                 <input 
+                id="lname"
                 type="text"
                 name="lname"
                 title="Applicant last name"
@@ -84,21 +142,25 @@
 
 
 
-                <label>
+
+                <label for="organization-title">
                 Organizational Title:
                 <input
+                id="organization-title"
                 type="text"
                 name="organization-title"
-                title="Your position in the organization"
+                title="Your position within the organization"
                 autocomplete="organization-title"
                 pattern="[A-Za-z\s-]{7,}">
                 </label>
 
 
 
-                <label>
-                Email:
+
+                <label for="email">
+                Email Address:
                 <input
+                id="email"
                 type="email"
                 name="email"
                 title="Email address"
@@ -109,9 +171,11 @@
 
 
 
-                <label>
+
+                <label for="phone">
                 Mobile Phone:
                 <input
+                id="phone"
                 type="tel"
                 name="phone"
                 title="Mobile phone number"
@@ -121,38 +185,52 @@
 
 
 
-                <label>
-                Business Name:
+
+                <label for="organization">
+                Business/Organization Name:
+
                 <input
+                id="organization"
                 type="text"
                 name="organization"
                 title="Business organization name"
                 autocomplete="organization"
                 required>
+
                 </label>
 
 
 
-                <label>
+
+                <label for="membership">
+
                 Membership Level:
 
-                <select name="membership" title="Membership Level">
+                <select 
+                id="membership"
+                name="membership"
+                title="Select membership level">
+
 
                 <option value="np">
                 NP Membership
                 </option>
 
+
                 <option value="bronze">
                 Bronze Membership
                 </option>
+
 
                 <option value="silver">
                 Silver Membership
                 </option>
 
+
                 <option value="gold">
                 Gold Membership
                 </option>
+
 
                 </select>
 
@@ -160,13 +238,15 @@
 
 
 
-                <label>
+
+                <label for="description">
+
                 Business Description:
 
                 <textarea
+                id="description"
                 name="description"
-                title="Business description">
-                </textarea>
+                title="Business description"></textarea>
 
                 </label>
 
@@ -185,55 +265,78 @@
 
             </form>
 
-
-
             <section class="membership-cards">
 
 
                 <div class="card">
+
                     <h2>NP Membership</h2>
-                    <p>For nonprofit organizations.</p>
-                    <a href="#" onclick="openModal('npModal')">
-                    More Information
+
+                    <p>
+                    For nonprofit organizations with no membership fee.
+                    </p>
+
+                    <a href="#"
+                    onclick="openModal('npModal')">
+                    View Benefits
                     </a>
+
                 </div>
 
-
                 <div class="card">
+
                     <h2>Bronze Membership</h2>
-                    <p>Basic business benefits.</p>
-                    <a href="#" onclick="openModal('bronzeModal')">
-                    More Information
+
+                    <p>
+                    Basic business networking benefits.
+                    </p>
+
+                    <a href="#"
+                    onclick="openModal('bronzeModal')">
+                    View Benefits
                     </a>
+
                 </div>
 
-
                 <div class="card">
+
                     <h2>Silver Membership</h2>
-                    <p>Extra marketing opportunities.</p>
-                    <a href="#" onclick="openModal('silverModal')">
-                    More Information
+
+                    <p>
+                    Marketing opportunities and discounts.
+                    </p>
+
+                    <a href="#"
+                    onclick="openModal('silverModal')">
+                    View Benefits
                     </a>
+
                 </div>
 
-
                 <div class="card">
+
                     <h2>Gold Membership</h2>
-                    <p>Premium business exposure.</p>
-                    <a href="#" onclick="openModal('goldModal')">
-                    More Information
+
+                    <p>
+                    Premium advertising and training benefits.
+                    </p>
+
+                    <a href="#"
+                    onclick="openModal('goldModal')">
+                    View Benefits
                     </a>
+
                 </div>
 
 
             </section>
 
 
+
         </div>
 
 
 
-        <!-- MODALS -->
 
 
         <dialog id="npModal">
@@ -241,7 +344,7 @@
             <h2>NP Membership Benefits</h2>
 
             <p>
-            Free membership for nonprofit organizations.
+            Free membership, community support, and nonprofit networking opportunities.
             </p>
 
             <button onclick="closeModal('npModal')">
@@ -252,12 +355,13 @@
 
 
 
+
         <dialog id="bronzeModal">
 
             <h2>Bronze Membership Benefits</h2>
 
             <p>
-            Networking events and business resources.
+            Networking events, business resources, and member communication.
             </p>
 
             <button onclick="closeModal('bronzeModal')">
@@ -268,12 +372,13 @@
 
 
 
+
         <dialog id="silverModal">
 
             <h2>Silver Membership Benefits</h2>
 
             <p>
-            Advertising opportunities and event discounts.
+            Includes advertising opportunities, event discounts, and training.
             </p>
 
             <button onclick="closeModal('silverModal')">
@@ -284,12 +389,13 @@
 
 
 
+
         <dialog id="goldModal">
 
             <h2>Gold Membership Benefits</h2>
 
             <p>
-            Premium advertising, training, and special events.
+            Premium advertising, spotlight features, exclusive events, and advanced training.
             </p>
 
             <button onclick="closeModal('goldModal')">
@@ -304,18 +410,29 @@
 
 
 
+
+
     <footer>
 
+
         <p>
+
         &copy;
+
         <span id="currentyear"></span>
-        Nansukusa Ketrine | WDD231
+
+        Nansukusa Ketrine | Uganda | WDD231
+
         </p>
 
+
         <p id="lastModified"></p>
+
 
     </footer>
 
 
+
 </body>
+
 </html>
