@@ -1,11 +1,14 @@
 const courses = [
 
 {
-subject:"CSE",
-number:110,
-title:"Introduction to Programming",
-credits:2,
-completed:true
+    subject: "CSE",
+    number: 110,
+    title: "Introduction to Programming",
+    credits: 2,
+    completed: true,
+    description: "Introduction to programming concepts using problem solving and basic algorithms.",
+    certificate: "Web and Computer Programming",
+    technology: ["Python"]
 },
 
 {
@@ -41,15 +44,19 @@ completed:true
 },
 
 {
-subject:"WDD",
-number:231,
-title:"Web Frontend Development I",
-credits:2,
-completed:false
-
+    subject: "WDD",
+    number: 231,
+    title: "Web Frontend Development I",
+    credits: 2,
+    completed: false,
+    description: "Build responsive websites using HTML, CSS and JavaScript.",
+    certificate: "Web and Computer Programming",
+    technology: ["HTML", "CSS", "JavaScript"]
 }
 
 ];
+
+const courseDetails = document.querySelector("#course-details");
 
 const courseContainer = document.querySelector("#course-container");
 
@@ -75,8 +82,11 @@ card.innerHTML=`
 <p>${course.credits} Credits</p>
 `;
 
-courseContainer.appendChild(card);
+card.addEventListener("click", () => {
+    displayCourseDetails(course);
+});
 
+courseContainer.appendChild(card);
 });
 
 const credits = courseList.reduce((sum,course)=>sum+course.credits,0);
@@ -112,3 +122,41 @@ courses.filter(course=>course.subject==="CSE")
 );
 
 });
+
+function displayCourseDetails(course) {
+
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+
+        <h2>${course.subject} ${course.number}</h2>
+
+        <h3>${course.title}</h3>
+
+        <p><strong>Credits:</strong> ${course.credits}</p>
+
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+
+        <p>${course.description}</p>
+
+        <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+    `;
+
+    courseDetails.showModal();
+
+    document.querySelector("#closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
+
+    courseDetails.addEventListener("click", (event) => {
+        const rect = courseDetails.getBoundingClientRect();
+
+        if (
+            event.clientX < rect.left ||
+            event.clientX > rect.right ||
+            event.clientY < rect.top ||
+            event.clientY > rect.bottom
+        ) {
+            courseDetails.close();
+        }
+    });
+}
