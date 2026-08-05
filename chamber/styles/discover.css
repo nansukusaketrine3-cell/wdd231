@@ -8,11 +8,13 @@
     --secondary: #e9c46a;
     --accent: #f4f4f4;
     --dark: #333;
-    --white: #fff;
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --white: #ffffff;
+    --shadow: 0 4px 12px rgba(0,0,0,.15);
 }
 
-/* ---------- MAIN ---------- */
+/* ==========================
+   MAIN
+========================== */
 
 main {
     max-width: 1200px;
@@ -26,19 +28,23 @@ main h1 {
     margin-bottom: 1rem;
 }
 
-/* ---------- VISITOR MESSAGE ---------- */
+/* ==========================
+   Visitor Message
+========================== */
 
 .visitor-message {
     background: var(--secondary);
     color: var(--dark);
-    padding: 1rem;
     border-left: 6px solid var(--primary);
     border-radius: 8px;
+    padding: 1rem;
     margin-bottom: 1.5rem;
     font-weight: bold;
 }
 
-/* ---------- INTRO ---------- */
+/* ==========================
+   Intro
+========================== */
 
 .intro {
     background: var(--accent);
@@ -52,34 +58,42 @@ main h1 {
     margin-bottom: .5rem;
 }
 
-/* ---------- GRID ---------- */
+/* ==========================
+   Discover Grid
+========================== */
 
 .discover-grid {
     display: grid;
     gap: 1.5rem;
 }
 
-/* ---------- CARD ---------- */
+/* ==========================
+   Cards
+========================== */
 
 .place-card {
     background: var(--white);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--shadow);
+
     display: grid;
+
     grid-template-areas:
         "title"
         "image"
         "address"
         "description"
         "button";
+
+    height: 100%;
 }
 
 .place-card h2 {
     grid-area: title;
-    padding: 1rem;
     background: var(--primary);
     color: white;
+    padding: 1rem;
     font-size: 1.2rem;
 }
 
@@ -95,7 +109,8 @@ main h1 {
     display: block;
     transition: transform .4s ease,
                 filter .4s ease,
-                opacity .4s ease;
+                opacity .4s ease,
+                box-shadow .4s ease;
 }
 
 .place-card address {
@@ -121,120 +136,165 @@ main h1 {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background .3s;
+    transition: background .3s ease;
+    align-self: end;
 }
 
 .place-card button:hover {
-    background: #174b4c;
+    background: #18494b;
 }
 
-/* =====================================
+/* ==========================
    MOBILE
-===================================== */
+========================== */
 
 @media (max-width:640px) {
 
-.discover-grid{
+    .discover-grid {
 
-grid-template-columns:1fr;
+        grid-template-columns: 1fr;
 
-grid-template-areas:
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
 
-"card1"
-"card2"
-"card3"
-"card4"
-"card5"
-"card6"
-"card7"
-"card8";
+    }
+
+    .place-card:nth-child(1){grid-area:card1;}
+    .place-card:nth-child(2){grid-area:card2;}
+    .place-card:nth-child(3){grid-area:card3;}
+    .place-card:nth-child(4){grid-area:card4;}
+    .place-card:nth-child(5){grid-area:card5;}
+    .place-card:nth-child(6){grid-area:card6;}
+    .place-card:nth-child(7){grid-area:card7;}
+    .place-card:nth-child(8){grid-area:card8;}
 
 }
 
-.place-card:nth-child(1){grid-area:card1;}
-.place-card:nth-child(2){grid-area:card2;}
-.place-card:nth-child(3){grid-area:card3;}
-.place-card:nth-child(4){grid-area:card4;}
-.place-card:nth-child(5){grid-area:card5;}
-.place-card:nth-child(6){grid-area:card6;}
-.place-card:nth-child(7){grid-area:card7;}
-.place-card:nth-child(8){grid-area:card8;}
-
-}
-
-/* =====================================
+/* ==========================
    TABLET
-===================================== */
+========================== */
 
 @media (min-width:641px) and (max-width:1024px){
 
-.discover-grid{
+    .discover-grid{
 
-grid-template-columns:repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
 
-grid-template-areas:
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
 
-"card1 card2"
-"card3 card4"
-"card5 card6"
-"card7 card8";
+    }
+
+    .place-card:nth-child(1){grid-area:card1;}
+    .place-card:nth-child(2){grid-area:card2;}
+    .place-card:nth-child(3){grid-area:card3;}
+    .place-card:nth-child(4){grid-area:card4;}
+    .place-card:nth-child(5){grid-area:card5;}
+    .place-card:nth-child(6){grid-area:card6;}
+    .place-card:nth-child(7){grid-area:card7;}
+    .place-card:nth-child(8){grid-area:card8;}
+
+    /* Hover Effect */
+
+    .place-card img:hover{
+
+        transform: scale(1.05);
+        filter: brightness(110%);
+        box-shadow: 0 8px 18px rgba(0,0,0,.3);
+
+    }
 
 }
 
-.place-card:nth-child(1){grid-area:card1;}
-.place-card:nth-child(2){grid-area:card2;}
-.place-card:nth-child(3){grid-area:card3;}
-.place-card:nth-child(4){grid-area:card4;}
-.place-card:nth-child(5){grid-area:card5;}
-.place-card:nth-child(6){grid-area:card6;}
-.place-card:nth-child(7){grid-area:card7;}
-.place-card:nth-child(8){grid-area:card8;}
-
-/* Hover Effects */
-
-.place-card img:hover{
-
-transform:scale(1.08);
-filter:brightness(110%);
-box-shadow:0 8px 18px rgba(0,0,0,.3);
-
-}
-
-}
-
-/* =====================================
+/* ==========================
    DESKTOP
-===================================== */
+========================== */
 
 @media (min-width:1025px){
 
-.discover-grid{
+    .discover-grid{
 
-grid-template-columns:repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
 
-grid-template-areas:
+        grid-template-areas:
+            "card1 card2 card2"
+            "card3 card4 card5"
+            "card6 card7 card8";
 
-"card1 card2 card3"
-"card4 card5 card6"
-"card7 card8 card8";
+    }
+
+    .place-card:nth-child(1){grid-area:card1;}
+    .place-card:nth-child(2){grid-area:card2;}
+    .place-card:nth-child(3){grid-area:card3;}
+    .place-card:nth-child(4){grid-area:card4;}
+    .place-card:nth-child(5){grid-area:card5;}
+    .place-card:nth-child(6){grid-area:card6;}
+    .place-card:nth-child(7){grid-area:card7;}
+    .place-card:nth-child(8){grid-area:card8;}
+
+    .place-card img:hover{
+
+        transform: scale(1.08);
+        filter: brightness(115%);
+        opacity: .95;
+        box-shadow: 0 10px 22px rgba(0,0,0,.35);
+
+    }
 
 }
 
-.place-card:nth-child(1){grid-area:card1;}
-.place-card:nth-child(2){grid-area:card2;}
-.place-card:nth-child(3){grid-area:card3;}
-.place-card:nth-child(4){grid-area:card4;}
-.place-card:nth-child(5){grid-area:card5;}
-.place-card:nth-child(6){grid-area:card6;}
-.place-card:nth-child(7){grid-area:card7;}
-.place-card:nth-child(8){grid-area:card8;}
+/* ==========================
+   Navigation
+========================== */
 
-.place-card img:hover{
-
-transform:scale(1.08);
-filter:brightness(115%);
-opacity:.9;
-
+#menu{
+    display:block;
+    background:none;
+    border:none;
+    font-size:2rem;
+    cursor:pointer;
 }
+
+.navigation{
+    display:none;
+    flex-direction:column;
+    gap:.5rem;
+}
+
+.navigation.open{
+    display:flex;
+}
+
+.navigation a{
+    text-decoration:none;
+    padding:.75rem;
+}
+
+.navigation a.active{
+    color:var(--secondary);
+    font-weight:bold;
+}
+
+@media (min-width:768px){
+
+    #menu{
+        display:none;
+    }
+
+    .navigation{
+        display:flex;
+        flex-direction:row;
+        gap:1rem;
+    }
 
 }
