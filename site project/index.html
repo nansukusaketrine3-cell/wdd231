@@ -1,375 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Z Truck Repair provides professional truck repair, maintenance, diagnostics, brake repair, electrical services, and spare parts solutions.">
+    <title>Z Truck Repair | Truck Repair and Maintenance</title>
+
+    <meta
+        name="description"
+        content="Z Truck Repair provides professional truck repair, maintenance, diagnostics, brake repair, electrical services, and spare parts solutions."
+    >
 
     <meta name="author" content="Nansukusa Ketrine">
 
-    <meta property="og:title" content="Z Truck Repair | Professional Truck Repair Services">
-    <meta property="og:description"
-        content="Reliable truck repair and maintenance services for commercial vehicles and transport businesses.">
-    <meta property="og:image"
-        content="https://nansukusaketrine3-cell.github.io/wdd231/final/images/truck-repair.jpg">
-    <meta property="og:url"
-        content="https://nansukusaketrine3-cell.github.io/wdd231/final/">
+    <!-- Open Graph Metadata -->
+    <meta
+        property="og:title"
+        content="Z Truck Repair | Professional Truck Repair Services"
+    >
+
+    <meta
+        property="og:description"
+        content="Reliable truck repair and maintenance services for commercial vehicles and transport businesses."
+    >
+
+    <meta
+        property="og:image"
+        content="https://nansukusaketrine3-cell.github.io/wdd231/final/images/truck-repair.jpg"
+    >
+
+    <meta
+        property="og:url"
+        content="https://nansukusaketrine3-cell.github.io/wdd231/final/"
+    >
+
     <meta property="og:type" content="website">
 
-    <title>Z Truck Repair | Truck Repair and Maintenance</title>
-
+    <!-- Favicon -->
     <link rel="icon" href="images/logo.png">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap"
-        rel="stylesheet">
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/site.css">
 
-    <script type="module" src="scripts/main.js"></script>
+    <!-- JavaScript -->
+    <script
+        type="module"
+        src="scripts/main.js"
+        defer>
+    </script>
 </head>
 
 <body>
 
     <header>
-
         <div class="header-container">
 
-            <a href="index.html"
-            class="logo-link">
+            <a href="index.html" class="logo-link">
 
-                <img src="images/logo.png"
+                <img
+                    src="images/logo.png"
                     alt="Z Truck Repair logo"
-                    class="logo">
+                    class="logo"
+                    width="90"
+                    height="90"
+                >
 
                 <span>Z Truck Repair</span>
 
             </a>
 
-            <nav class="navigation">
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navigation"
+            >
+                ☰
+            </button>
 
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-                <a href="thankyou.html">Thankyou</a>
-                <a href="attributions.html">Attributions</a>
+            <nav
+                class="navigation"
+                id="navigation"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="index.html"
+                    class="active"
+                    aria-current="page"
+                >
+                    Home
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="attributions.html">
+                    Attributions
+                </a>
 
             </nav>
 
         </div>
-        
-        <h1>Z Truck Repair Website Plan</h1>
-        <p>WDD 231 Individual Website Project</p>
-
     </header>
+
 
     <main>
 
-        <!-- Site Name -->
-        <section>
-            <h2>Site Name</h2>
+        <!-- Page Heading -->
+        <h1>Z Truck Repair</h1>
 
-            <p>
-                <strong>Z Truck Repair</strong>
-            </p>
+        <!-- Hero -->
+        <section class="hero">
 
-            <p>
-                The name <strong>Z Truck Repair</strong> was selected because
-                it clearly represents a professional truck repair and
-                maintenance company. The name is short, easy to remember,
-                and directly communicates the type of services the business
-                provides.
-            </p>
+            <img
+                src="images/truck-repair.jpg"
+                alt="Truck being serviced by a professional mechanic"
+                width="1200"
+                height="700"
+                fetchpriority="high"
+            >
 
-            <p>
-                <strong>Suggested Domain:</strong>
-                www.ztruckrepair.com
-            </p>
-        </section>
+            <div class="hero-content">
 
+                <h2>
+                    Reliable Truck Repair and Maintenance
+                </h2>
 
-        <!-- Site Purpose -->
-        <section>
-            <h2>Site Purpose</h2>
+                <p>
+                    Keeping your trucks safe, reliable, and ready for
+                    the road.
+                </p>
 
-            <p>
-                The purpose of the Z Truck Repair website is to provide
-                customers with clear information about truck repair and
-                maintenance services. Visitors will be able to learn about
-                the company, explore available services, understand the
-                benefits of preventive maintenance, and find contact
-                information for requesting assistance.
-            </p>
-
-            <p>
-                The website will also provide useful information for truck
-                owners and transportation businesses that depend on reliable
-                commercial vehicles.
-            </p>
-        </section>
-
-
-        <!-- Target Audience -->
-        <section>
-            <h2>Target Audience Scenarios</h2>
-
-            <p>
-                The website is designed for truck owners, drivers,
-                transportation businesses, and fleet managers who need
-                dependable truck repair and maintenance services.
-            </p>
-
-            <ul>
-                <li>
-                    What truck repair services does Z Truck Repair provide?
-                </li>
-
-                <li>
-                    How can I schedule a truck repair appointment?
-                </li>
-
-                <li>
-                    Where is Z Truck Repair located?
-                </li>
-
-                <li>
-                    What are the company's operating hours?
-                </li>
-
-                <li>
-                    Does the company provide preventive maintenance?
-                </li>
-
-                <li>
-                    Can I contact the business about spare parts?
-                </li>
-            </ul>
-        </section>
-
-
-        <!-- Color Scheme -->
-        <section>
-            <h2>Color Scheme</h2>
-
-            <div class="colors">
-
-                <div class="card">
-                    <div class="blue" aria-label="Primary blue color"></div>
-
-                    <h3>Primary Color</h3>
-
-                    <p>
-                        <strong>#1F4E79</strong>
-                    </p>
-
-                    <p>
-                        Used for the header, navigation, headings, footer,
-                        and important areas of the website.
-                    </p>
-                </div>
-
-
-                <div class="card">
-                    <div class="gold" aria-label="Accent gold color"></div>
-
-                    <h3>Accent Color</h3>
-
-                    <p>
-                        <strong>#F4B400</strong>
-                    </p>
-
-                    <p>
-                        Used for buttons, highlights, borders, calls to
-                        action, and other important visual elements.
-                    </p>
-                </div>
+                <a
+                    href="services.html"
+                    class="button"
+                >
+                    Explore Our Services
+                </a>
 
             </div>
+
         </section>
 
 
-        <!-- Typography -->
-        <section>
-            <h2>Typography</h2>
+        <!-- Company Introduction -->
+        <section class="introduction">
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Font</th>
-                        <th>Usage</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Roboto</td>
-                        <td>Headings, titles, and navigation</td>
-                    </tr>
-
-                    <tr>
-                        <td>Open Sans</td>
-                        <td>Body text, paragraphs, lists, and forms</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-
-        <!-- Website Pages -->
-        <section>
-            <h2>Website Pages</h2>
-
-            <ol>
-                <li>
-                    <strong>Home Page</strong> —
-                    Introduction to Z Truck Repair, company overview,
-                    hero image, and highlights of the main services.
-                </li>
-
-                <li>
-                    <strong>Services Page</strong> —
-                    Information about engine repair, brake and suspension
-                    repair, electrical diagnostics, preventive maintenance,
-                    and spare parts.
-                </li>
-
-                <li>
-                    <strong>Contact Page</strong> —
-                    Business location, telephone number, email address,
-                    business hours, contact form, and location information.
-                </li>
-            </ol>
-        </section>
-
-
-        <!-- Wireframes -->
-        <section>
-            <h2>Wireframes</h2>
+            <h2>Welcome to Z Truck Repair</h2>
 
             <p>
-                The wireframes below show the planned responsive layout
-                for the Z Truck Repair website on mobile and desktop
-                screens.
+                Z Truck Repair provides professional repair and maintenance
+                solutions for truck owners, drivers, fleet operators, and
+                transportation businesses.
             </p>
 
-            <div class="wireframes">
+            <p>
+                Our goal is to help keep commercial vehicles dependable
+                through quality repairs, preventive maintenance, diagnostics,
+                and reliable spare parts solutions.
+            </p>
 
-                <!-- Mobile Wireframe -->
-                <div class="placeholder">
-                    <h3>Mobile View</h3>
-
-                    <img
-                        src="images/mobile-wireframe.jpg"
-                        alt="Hand-drawn mobile wireframe showing the planned Z Truck Repair website layout"
-                        loading="lazy"
-                    >
-                </div>
+        </section>
 
 
-                <!-- Desktop Wireframe -->
-                <div class="placeholder">
-                    <h3>Desktop View</h3>
+        <!-- Services -->
+        <section class="services-preview">
 
-                    <img
-                        src="images/desktop-wireframe.jpg"
-                        alt="Hand-drawn desktop wireframe showing the planned Z Truck Repair website layout"
-                        loading="lazy"
-                    >
-                </div>
+            <h2>Our Main Services</h2>
+
+            <div
+                id="services-container"
+                class="service-grid"
+            >
+                <!-- JavaScript-generated services appear here -->
+            </div>
+
+        </section>
+
+
+        <!-- Why Choose Us -->
+        <section class="why-us">
+
+            <h2>Why Choose Z Truck Repair?</h2>
+
+            <div class="benefits">
+
+                <article>
+                    <h3>Experienced Service</h3>
+
+                    <p>
+                        Professional repair solutions designed to keep
+                        commercial trucks operating efficiently.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Reliable Repairs</h3>
+
+                    <p>
+                        We focus on dependable repairs and maintenance
+                        solutions for transportation businesses.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Quality Parts</h3>
+
+                    <p>
+                        We provide repair solutions and spare parts to
+                        support long-term vehicle reliability.
+                    </p>
+                </article>
 
             </div>
+
         </section>
 
 
-        <!-- Reason for Choosing Subject -->
-        <section>
-            <h2>Reason for Choosing This Subject</h2>
+        <!-- Call to Action -->
+        <section class="call-to-action">
+
+            <h2>Need Truck Repair?</h2>
 
             <p>
-                I chose Z Truck Repair because I am interested in the
-                automotive industry and businesses that support
-                transportation. Truck repair services are important for
-                keeping commercial vehicles safe, reliable, and efficient.
+                Contact Z Truck Repair today to learn more about our
+                repair and maintenance services.
             </p>
 
-            <p>
-                Transportation businesses depend on trucks to move goods
-                and provide services, so regular maintenance and timely
-                repairs are important. The Z Truck Repair website will help
-                customers learn about available repair and maintenance
-                services while providing an easy way to contact the business.
-            </p>
+            <a
+                href="contact.html"
+                class="button"
+            >
+                Contact Us
+            </a>
+
         </section>
 
 
-        <!-- Planned JavaScript Features -->
-        <section>
-            <h2>Planned JavaScript Features</h2>
+        <!-- Modal -->
+        <dialog id="service-modal">
 
-            <p>
-                The completed website will include JavaScript functionality
-                to make the site dynamic and interactive.
-            </p>
+            <div class="modal-content">
 
-            <ul>
-                <li>Fetch API data for truck repair services.</li>
-                <li>Display at least fifteen dynamic data items.</li>
-                <li>Use local storage for customer preferences.</li>
-                <li>Use a modal dialog for additional information.</li>
-                <li>Use event listeners for user interactions.</li>
-                <li>Use array methods to process data.</li>
-                <li>Use template literals to generate dynamic HTML.</li>
-                <li>Use ES modules to organize JavaScript code.</li>
-                <li>Use try-catch for asynchronous operations.</li>
-            </ul>
-        </section>
+                <button
+                    id="close-modal"
+                    type="button"
+                    aria-label="Close service information"
+                >
+                    ×
+                </button>
 
+                <h2 id="modal-title">
+                    Service Information
+                </h2>
 
-        <!-- Website Goals -->
-        <section>
-            <h2>Website Goals</h2>
+                <p id="modal-description"></p>
 
-            <ul>
-                <li>
-                    Provide customers with clear information about truck
-                    repair services.
-                </li>
+            </div>
 
-                <li>
-                    Create a professional and trustworthy online presence.
-                </li>
-
-                <li>
-                    Make it easy for customers to contact the business.
-                </li>
-
-                <li>
-                    Provide a responsive experience on phones, tablets,
-                    and desktop computers.
-                </li>
-
-                <li>
-                    Follow accessibility, usability, SEO, and web
-                    development standards.
-                </li>
-            </ul>
-        </section>
+        </dialog>
 
     </main>
 
 
     <footer>
-        <p id="copyright"></p>
 
-        <p>
-            WDD 231 Individual Website Project
-        </p>
+        <div class="footer-container">
+
+            <div>
+                <h2>Z Truck Repair</h2>
+
+                <p>
+                    Professional truck repair and maintenance solutions.
+                </p>
+            </div>
+
+            <div>
+                <h2>Quick Links</h2>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="attributions.html">
+                    Attributions
+                </a>
+            </div>
+
+            <div>
+                <h2>Project Video</h2>
+
+                <a
+                    href="YOUR-YOUTUBE-OR-LOOM-VIDEO-LINK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Website Demonstration
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p id="copyright"></p>
+
+            <p>
+                WDD 231 Individual Website Project
+            </p>
+
+        </div>
+
     </footer>
 
 </body>
