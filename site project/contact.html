@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Contact Z Truck Repair for truck repair, maintenance, diagnostics, spare parts, and service requests.">
+
+    <meta name="author" content="Nansukusa Ketrine">
+
+    <meta property="og:title"
+        content="Z Truck Repair | Contact">
+
+    <meta property="og:description"
+        content="Contact Z Truck Repair for professional truck repair and maintenance services.">
+
+    <meta property="og:image"
+        content="https://YOUR-GITHUB-USERNAME.github.io/wdd231/final/images/truck-repair.jpg">
+
+    <meta property="og:url"
+        content="https://YOUR-GITHUB-USERNAME.github.io/wdd231/final/contact.html">
+
+    <meta property="og:type" content="website">
+
+    <title>Z Truck Repair | Contact Us</title>
+
+    <link rel="icon" href="images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/site.css">
+
+    <script type="module" src="scripts/main.js"></script>
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo-link">
+
+                <img src="images/logo.png"
+                    alt="Z Truck Repair logo"
+                    class="logo">
+
+                <span>Z Truck Repair</span>
+
+            </a>
+
+            <button id="menu-button"
+                    class="menu-button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="navigation">
+
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="thankyou.html">Thankyou</a>
+                    <a href="attributions.html">Attributions</a>
+
+                </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+
+            <h1>Contact Z Truck Repair</h1>
+
+            <p>
+                Let us know how we can help with your truck.
+            </p>
+
+        </section>
+
+        <section class="contact-layout">
+
+            <!-- Business Information -->
+
+            <div class="contact-information">
+
+                <h2>Get in Touch</h2>
+
+                <p>
+                    Contact us for truck repair, maintenance,
+                    diagnostics, and spare parts information.
+                </p>
+
+                <div class="contact-item">
+
+                    <h3>📍 Location</h3>
+
+                    <p>
+                        Nasana<br>
+                        Kampala, Uganda
+                    </p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <h3>📞 Phone</h3>
+
+                    <p>
+                        <a href="tel:+256700000000">
+                            +256 700 000 000
+                        </a>
+                    </p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <h3>✉ Email</h3>
+
+                    <p>
+                        <a href="mailto:info@ztruckrepair.com">
+                            info@ztruckrepair.com
+                        </a>
+                    </p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <h3>🕐 Business Hours</h3>
+
+                    <p>
+                        Monday – Friday: 8:00 AM – 6:00 PM
+                    </p>
+
+                    <p>
+                        Saturday: 9:00 AM – 3:00 PM
+                    </p>
+
+                    <p>
+                        Sunday: Closed
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Form -->
+
+            <div class="form-container">
+
+                <h2>Request a Service</h2>
+
+                <form action="thankyou.html"
+                    method="get">
+
+                    <label for="first-name">
+                        First Name
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="first-name"
+                        name="first-name"
+                        autocomplete="given-name"
+                        required>
+
+                    <label for="last-name">
+                        Last Name
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="last-name"
+                        name="last-name"
+                        autocomplete="family-name"
+                        required>
+
+                    <label for="email">
+                        Email
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required>
+
+                    <label for="phone">
+                        Phone Number
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        autocomplete="tel"
+                        required>
+
+                    <label for="service">
+                        Service Needed
+                        <span>*</span>
+                    </label>
+
+                    <select id="service"
+                            name="service"
+                            required>
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option value="engine-repair">
+                            Engine Repair
+                        </option>
+
+                        <option value="brake-suspension">
+                            Brake & Suspension
+                        </option>
+
+                        <option value="electrical">
+                            Electrical Diagnostics
+                        </option>
+
+                        <option value="maintenance">
+                            Preventive Maintenance
+                        </option>
+
+                        <option value="spare-parts">
+                            Spare Parts
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                    <label for="message">
+                        Message
+                        <span>*</span>
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required></textarea>
+
+                    <button type="submit"
+                            class="button">
+                        Submit Request
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Map -->
+        <section>
+
+            <h2>Our Location</h2>
+
+            <div class="map-container">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Kampala%20Uganda&output=embed"
+                    title="Map showing Z Truck Repair location in Kampala"
+                    loading="lazy">
+                </iframe>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>Z Truck Repair</h2>
+
+                <p>
+                    Professional truck repair and maintenance services.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+
+                <p>Nasana, Kampala, Uganda</p>
+                <p>+256 700 000 000</p>
+                <p>info@ztruckrepair.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p id="copyright"></p>
+
+            <p>
+                <a href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener">
+                    JavaScript Project Video
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore Z Truck Repair services including engine repair, brake repair, electrical diagnostics, preventive maintenance, and spare parts solutions.">
+
+    <meta name="author" content="Nansukusa Ketrine">
+
+    <meta property="og:title"
+        content="Z Truck Repair | Services">
+
+    <meta property="og:description"
+        content="Explore professional truck repair and maintenance services.">
+
+    <meta property="og:image"
+        content="https://YOUR-GITHUB-USERNAME.github.io/wdd231/final/images/truck-repair.jpg">
+
+    <meta property="og:url"
+        content="https://YOUR-GITHUB-USERNAME.github.io/wdd231/final/services.html">
+
+    <meta property="og:type" content="website">
+
+    <title>Z Truck Repair | Services</title>
+
+    <link rel="icon" href="images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/site.css">
+
+    <script type="module" src="scripts/main.js"></script>
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo-link">
+
+                <img src="images/logo.png"
+                    alt="Z Truck Repair logo"
+                    class="logo">
+
+                <span>Z Truck Repair</span>
+
+            </a>
+
+            <button id="menu-button"
+                    class="menu-button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="navigation">
+
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="thankyou.html">Thankyou</a>
+                    <a href="attributions.html">Attributions</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+
+            <h1>Our Truck Repair Services</h1>
+
+            <p>
+                Professional solutions for truck owners and
+                transport businesses.
+            </p>
+
+        </section>
+
+        <section>
+
+            <div class="section-heading">
+
+                <h2>Available Services</h2>
+
+                <p>
+                    Select a service to view more information.
+                </p>
+
+            </div>
+
+            <div id="service-container"
+                class="service-grid">
+
+                <p class="loading">
+                    Loading services...
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Modal -->
+        <dialog id="service-dialog">
+
+            <div class="dialog-content">
+
+                <button id="close-dialog"
+                        class="close-button"
+                        aria-label="Close service details">
+                    &times;
+                </button>
+
+                <div id="dialog-content">
+                    <!-- JavaScript inserts content here -->
+                </div>
+
+            </div>
+
+        </dialog>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>Z Truck Repair</h2>
+
+                <p>
+                    Professional truck repair and maintenance services.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+
+                <p>Nasana, Kampala, Uganda</p>
+                <p>+256 700 000 000</p>
+                <p>info@ztruckrepair.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p id="copyright"></p>
+
+            <p>
+                <a href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener">
+                    JavaScript Project Video
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,829 @@
+/* =========================================
+   Z TRUCK REPAIR
+   WDD 231 INDIVIDUAL WEBSITE PROJECT
+   ========================================= */
+
+/* ---------- COLOR VARIABLES ---------- */
+
+:root {
+    --primary: #1f4e79;
+    --secondary: #f4b400;
+    --light: #f7f7f7;
+    --dark: #222222;
+    --white: #ffffff;
+    --gray: #666666;
+    --border: #dddddd;
+    --shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------- BASE ---------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.2;
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.site-header {
+    background: var(--primary);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.8rem 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: var(--secondary);
+    color: var(--dark);
+}
+
+.menu-button {
+    display: none;
+    border: 0;
+    background: transparent;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* ---------- MAIN ---------- */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 520px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../images/truck-repair.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 2rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.button {
+    display: inline-block;
+
+    background: var(--secondary);
+    color: var(--dark);
+
+    padding: 0.75rem 1.3rem;
+
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    background: var(--white);
+}
+
+.button-secondary {
+    background: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.hero-buttons {
+    margin-top: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+/* ---------- INTRO ---------- */
+
+.intro {
+    background: var(--white);
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.intro img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* ---------- SERVICE HIGHLIGHTS ---------- */
+
+.service-highlights {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 1.2rem;
+}
+
+.service-highlights article {
+    background: var(--white);
+
+    padding: 1.5rem;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+    box-shadow: var(--shadow);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+
+/* ---------- WHY US ---------- */
+
+.why-us {
+    background: var(--primary);
+    color: var(--white);
+
+    padding: 2rem;
+
+    border-radius: 10px;
+}
+
+.why-us h2 {
+    color: var(--white);
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.benefits div {
+    padding: 1rem;
+    border-left: 4px solid var(--secondary);
+}
+
+.benefits h3 {
+    margin-bottom: 0.5rem;
+}
+
+
+/* ---------- CTA ---------- */
+
+.call-to-action {
+    text-align: center;
+    background: var(--white);
+    padding: 2.5rem;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+}
+
+.call-to-action .button {
+    margin-top: 0.5rem;
+}
+
+
+/* ---------- PAGE BANNER ---------- */
+
+.page-banner {
+    background: var(--primary);
+    color: var(--white);
+
+    padding: 3rem 2rem;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.page-banner h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin-bottom: 0.75rem;
+}
+
+
+/* ---------- SERVICE PAGE ---------- */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.service-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 1.5rem;
+}
+
+.service-card {
+    background: var(--white);
+
+    padding: 1.5rem;
+
+    border-radius: 8px;
+
+    box-shadow: var(--shadow);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card h3 {
+    color: var(--primary);
+    margin: 0.6rem 0;
+}
+
+.service-category {
+    display: inline-block;
+
+    width: fit-content;
+
+    background: var(--secondary);
+
+    color: var(--dark);
+
+    padding: 0.25rem 0.6rem;
+
+    border-radius: 4px;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+}
+
+.service-details {
+    margin-top: auto;
+
+    padding-top: 1rem;
+}
+
+.service-details p {
+    margin-bottom: 0.4rem;
+}
+
+.details-button {
+    margin-top: 1rem;
+
+    border: 0;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    padding: 0.7rem;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+}
+
+.details-button:hover {
+    background: var(--secondary);
+    color: var(--dark);
+}
+
+.loading,
+.error {
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 2rem;
+}
+
+
+/* ---------- MODAL ---------- */
+
+dialog {
+    width: min(90%, 600px);
+
+    border: 0;
+    border-radius: 10px;
+
+    padding: 0;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.dialog-content {
+    padding: 2rem;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+
+    background: transparent;
+    border: 0;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+.dialog-content h2 {
+    margin-top: 1rem;
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.contact-layout {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 2rem;
+}
+
+.contact-information,
+.form-container {
+    background: var(--white);
+
+    padding: 2rem;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+}
+
+.contact-item {
+    border-bottom: 1px solid var(--border);
+
+    padding: 1rem 0;
+}
+
+.contact-item:last-child {
+    border-bottom: 0;
+}
+
+.contact-item h3 {
+    color: var(--primary);
+    margin-bottom: 0.3rem;
+}
+
+.contact-item a {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+
+/* ---------- FORM ---------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+label span {
+    color: #b00020;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 0.75rem;
+
+    border: 1px solid #999;
+
+    border-radius: 5px;
+
+    font: inherit;
+
+    background: var(--white);
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgba(244, 180, 0, 0.4);
+    border-color: var(--primary);
+}
+
+form .button {
+    margin-top: 1rem;
+}
+
+
+/* ---------- MAP ---------- */
+
+.map-container {
+    background: var(--white);
+
+    padding: 1rem;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+
+/* ---------- THANK YOU ---------- */
+
+.thank-you {
+    min-height: 400px;
+
+    background: var(--white);
+
+    padding: 3rem;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.thank-you h1 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.thank-you .button {
+    margin-top: 1rem;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: var(--primary);
+    color: var(--white);
+
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 2.5rem 1.5rem;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap: 2rem;
+}
+
+.footer-content h2,
+.footer-content h3 {
+    color: var(--white);
+    margin-bottom: 0.8rem;
+}
+
+.footer-content a {
+    display: block;
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    margin-bottom: 0.4rem;
+}
+
+.footer-content a:hover {
+    color: var(--secondary);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+    padding: 1rem;
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin-bottom: 0.3rem;
+}
+
+.footer-bottom a {
+    color: var(--secondary);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media screen and (max-width: 900px) {
+
+    .service-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media screen and (max-width: 700px) {
+
+    .header-container {
+        position: relative;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        background: var(--primary);
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 0.75rem 1rem;
+
+        box-shadow: var(--shadow);
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .service-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-content a {
+        display: block;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL SCREENS
+   ========================================= */
+
+@media screen and (max-width: 350px) {
+
+    .header-container {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo-link {
+        font-size: 1rem;
+    }
+
+    .hero {
+        min-height: 420px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+}
